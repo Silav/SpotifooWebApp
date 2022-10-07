@@ -109,7 +109,7 @@ const Footer = ({
         )}
         <div
           style={{
-            width: "35%",
+            width: "38%",
             
             display: "flex",
             alignContent: "center",
