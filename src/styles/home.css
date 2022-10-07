@@ -1,0 +1,117 @@
+:root {
+  --black: #121212;
+  --lightBlack: #242424;
+  --space32: 32px;
+  --space16: 16px
+}
+
+.home-container{
+  position: absolute;
+  background-color: var(--black);
+  margin-left: 13.9%;
+  width: 86.1%;
+  height: 100%;
+  overflow-y: scroll
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--black); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--lightBlack); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.content-container{
+    margin-left: var(--space32);
+    margin-top: var(--space32);
+    height: 100%;
+    color: white
+}
+
+.content-container h1{
+    font-size: 1.5em;
+    letter-spacing: 0.1rem;
+}
+
+.item-container{
+    width: 17%;
+    height: 36.5%;
+    margin-top: var(--space16);
+    flex-direction: column;
+    background-color: var(--lightBlack);
+    border-radius: 8px;
+    margin-right: var(--space16);
+    cursor: pointer;
+}
+
+.img-heading-container{
+    margin: 0 auto;
+    padding-top: var(--space16);
+    width: 88%;
+    height: 99%;
+}
+
+.text{
+    width: 100%;
+    margin-top: var(--space16);
+    margin-bottom: var(--space16);
+    color: #FFFFFF;
+    overflow: hidden;
+    text-overflow: ellipsis ;
+    white-space: nowrap
+}
+
+.section{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 115px;
+}
+
+.img{
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 100%;
+    height: 75%;
+}
+
+@media screen and (max-width: 900px) {
+  .home-container{
+    margin-left: 17%;
+  }
+  .item-container{
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-container{
+    margin-left: 0;
+    width: 100%;
+    height: 85%;
+  }
+  .item-container{
+    width: 42%;
+    height: 30%;
+  }
+  .text h3{
+    font-size: var(--space16);
+  }
+  .section{
+    padding-bottom: 30px;
+  }
+}

@@ -1,0 +1,88 @@
+:root {
+  --black: #121212;
+  --lightBlack: #242424;
+  --white: white;
+  --space32: 32px;
+  --space16: 16px
+}
+.album-container{
+    padding-left: var(--space32);
+    padding-top: var(--space32);
+    padding-bottom: var(--space32);
+    background-color: #242424;
+    height: 100%;
+    width: 100%;
+    color: var(--white);
+}
+.album-title{
+    display: flex;
+    align-items: flex-end;
+}
+
+.genre-title{
+    margin-left: var(--space32);
+}
+
+.genre-title h1{
+    font-size: 48px;
+}
+
+.album-text{
+    margin-left: var(--space32);
+    margin-right: var(--space32);
+    margin-top: 48px;
+    padding-bottom: 120px;
+}
+
+.album-text-title{
+    margin-bottom: 8px;
+    margin-left: 8px;
+    color: #A3A3A3;
+}
+
+.album-detail{
+    margin-top: var(--space16);
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    color: #A3A3A3
+}
+
+.title-detail{
+    margin-left: 17px;
+}
+
+.title-detail-h4{
+    color: #FFFFFF
+}
+
+.line{
+    color: #A3A3A3;
+    height: 1px;
+}
+
+hr.line {
+    border: 0;
+    height: 1px;
+    background: #A3A3A3;
+}
+
+@media screen and (max-width: 860px) {
+
+}
+
+@media screen and (max-width: 600px) {
+    .album-container{
+        padding-left: var(--space16);
+        padding-bottom: var(--space16);
+    }
+    .album-title{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .genre-title{
+        margin-left: 0;
+        margin-top: var(--space16);
+    }
+}
